@@ -46,4 +46,5 @@ st.text(fruityvice_response)
 #New section to display fruityvice nutrition information
 import requests
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
-st.test(fruityvice_response.json())
+#st.test(fruityvice_response.json())
+fv_df = st.dataframe(data=fruityvice_response.json(), use_container_width=True)
