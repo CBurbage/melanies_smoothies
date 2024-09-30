@@ -30,7 +30,7 @@ if ingredients_list:
        fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
        fv_df = st.dataframe(data=fruityvice_response.json(), use_container_width=True)
    #st.write(ingr nsert into smoothies.public.orders(ingredients, name_on_order)
-            values ('""" + ingredients_string + """','"""+name_on_order+"""')"""
+       values ('""" + ingredients_string + """','"""+name_on_order+"""')"""
    
    
    
